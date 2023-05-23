@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Challenge Encriptador G5</title>
+    <!--Inportaciones fonts,reset-->
+    <link rel="icon" type="icon/image" href="imagenes/icon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet" />
+    <!--end imports-->
+  </head>
+  <body>
+    <!--Cuerpo-->
+    <header class="cabecera">
+      <img class="LogoImg" src="imagenes/logo.png" alt="Logo" />
+      <h1 class="neon-text">Alura Challenge</h1>
+      <h2 class="neon-text">Proyecto Encriptador</h2>
+    </header>
+
+    <main class="principal">
+      <section class="seccion1">
+        <textarea id="areaPrincipal" class="area" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="contenedor-botones">
+          <p>Las letras mayúsculas serán cambiadas a minúsculas y los acentos serán eliminados.</p>
+          <input type="button" class="btn-encriptar" value="Encriptar" />
+          <input type="button" class="btn-desencriptar" value="Desencriptar" />
+          <input type="button" id="limpiar" value="Limpiar" />
+        </div>
+      </section>
+      <!--contenedor not found-error-->
+      <section class="seccion2">
+        <div class="contenedor-error">
+          <img class="notfound" src="imagenes/notfound.png" alt="Texto No Encontrado" />
+        </div>
+        <!-- contenedor parrafo-->
+        <div class="contenedor-parrafo">
+          <h3 class="contenedor-h3">Ningún mensaje fue encontrado</h3>
+        </div>
+        <!--contenedor resultado-->
+        <div class="contenedor-resultado">
+          <textarea id="resultado-final" placeholder="Texto encriptado o desencriptado"></textarea>
+        </div>
+        <!--contenedor copiar-->
+        <div class="contenedor-copiar">
+          <input type="button" id="btn-copiar" value="Copiar" />
+        </div>
+      </section>
+    </main>
+
+    <!--Scripts Codes-->
+    <script src="assets/encryp.js"></script>
+    <script src="assets/unencrypt.js"></script>
+    <script src="assets/copy.js"></script>
+    <script src="assets/clean.js"></script>
+    <!--Footer-->
+    <footer class="pie-pagina">© 2023 By AlejandroHolzM.</footer>
+  </body>
+</html>
